@@ -43,12 +43,12 @@
 
     function search(address){
         var map = new BMap.Map("allmap");
-        map.centerAndZoom("上海", 15);
+        map.centerAndZoom(address, 15);
         var infoWindow = new BMap.InfoWindow(address);  // 创建信息窗口对象
         map.openInfoWindow(infoWindow,address); //开启信息窗口
     }
 
-search();
+    search("上海");
 
 </script>
 
