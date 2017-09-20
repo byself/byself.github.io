@@ -29,10 +29,10 @@
     <div class="bdmap" id="allmap"></div>
 </div>
 
-<input type="button" value="北京" onclick="theLocation(116.404, 39.915)" />
-<input type="button" value="上海" onclick="theLocation(121.475652, 31.233212)" />
-<input type="button" value="漯河" onclick="theLocation(114.03032, 33.577846)" />
-<input type="button" value="杭州" onclick="theLocation(120.199989, 30.256827)" />
+<input type="button" value="北京" onclick="theLocation(116.404, 39.915, '北京')" />
+<input type="button" value="上海" onclick="theLocation(121.475652, 31.233212, '上海')" />
+<input type="button" value="漯河" onclick="theLocation(114.03032, 33.577846, '漯河')" />
+<input type="button" value="杭州" onclick="theLocation(120.199989, 30.256827, '杭州')" />
 
 <script type="text/javascript">
 
@@ -44,12 +44,15 @@
 //    var infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象
 //    map.openInfoWindow(infoWindow,point); //开启信息窗口
 
-    function theLocation(longitude, latitude){
+    function theLocation(longitude, latitude, address){
         map.clearOverlays();
         var new_point = new BMap.Point(longitude, latitude);
         var marker = new BMap.Marker(new_point);  // 创建标注
         map.addOverlay(marker);              // 将标注添加到地图中
         map.panTo(new_point);
+
+        var infoWindow = new BMap.InfoWindow(address);
+        map.openInfoWindow(infoWindow,point); //开启信息窗口
     }
 
 </script>
