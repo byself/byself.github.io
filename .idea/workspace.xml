@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf06ddcd-aa05-48ce-8da3-0b25ec6d9f54" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bdmap/map.html" afterPath="$PROJECT_DIR$/bdmap/map.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,11 +21,11 @@
       <file leaf-file-name="map.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bdmap/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+            <state relative-caret-position="778">
+              <caret line="90" column="40" lean-forward="true" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
               <folding>
-                <marker date="1505896224000" expanded="true" signature="2932:2948" ph="..." />
-                <marker date="1505896224000" expanded="true" signature="2960:2979" ph="..." />
+                <marker date="1505897041000" expanded="true" signature="2895:2911" ph="..." />
+                <marker date="1505897041000" expanded="true" signature="2923:2942" ph="..." />
               </folding>
             </state>
           </provider>
@@ -63,6 +64,13 @@
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -97,11 +105,6 @@
               <item name="byself.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="byself.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="byself.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="byself.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="bdmap" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -115,6 +118,9 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/bdmap" />
     </key>
@@ -143,7 +149,7 @@
       <updated>1505787210274</updated>
       <workItem from="1505787211546" duration="1158000" />
       <workItem from="1505793854604" duration="3187000" />
-      <workItem from="1505869750882" duration="10409000" />
+      <workItem from="1505869750882" duration="11136000" />
     </task>
     <task id="LOCAL-00001" summary="添加index,更新地图api">
       <created>1505787500344</created>
@@ -163,7 +169,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14754000" />
+    <option name="totallyTimeSpent" value="15481000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="296" y="23" width="2560" height="1334" extended-state="0" />
@@ -211,8 +217,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1505896224000" expanded="true" signature="2932:2948" ph="..." />
-            <marker date="1505896224000" expanded="true" signature="2960:2979" ph="..." />
+            <marker date="1505897041000" expanded="true" signature="2895:2911" ph="..." />
+            <marker date="1505897041000" expanded="true" signature="2923:2942" ph="..." />
           </folding>
         </state>
       </provider>
@@ -230,8 +236,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1505896224000" expanded="true" signature="2932:2948" ph="..." />
-            <marker date="1505896224000" expanded="true" signature="2960:2979" ph="..." />
+            <marker date="1505897041000" expanded="true" signature="2895:2911" ph="..." />
+            <marker date="1505897041000" expanded="true" signature="2923:2942" ph="..." />
           </folding>
         </state>
       </provider>
@@ -252,13 +258,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bdmap/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+        <state relative-caret-position="778">
+          <caret line="90" column="40" lean-forward="true" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
           <folding>
-            <marker date="1505896224000" expanded="true" signature="2932:2948" ph="..." />
-            <marker date="1505896224000" expanded="true" signature="2960:2979" ph="..." />
+            <marker date="1505897041000" expanded="true" signature="2895:2911" ph="..." />
+            <marker date="1505897041000" expanded="true" signature="2923:2942" ph="..." />
           </folding>
         </state>
       </provider>
