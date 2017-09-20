@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf06ddcd-aa05-48ce-8da3-0b25ec6d9f54" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bdmap/map.html" afterPath="$PROJECT_DIR$/bdmap/map.html" />
-    </list>
+    <list default="true" id="cf06ddcd-aa05-48ce-8da3-0b25ec6d9f54" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -21,8 +18,8 @@
       <file leaf-file-name="map.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bdmap/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="778">
-              <caret line="90" column="40" lean-forward="true" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
+            <state relative-caret-position="403">
+              <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
               <folding>
                 <marker date="1505897041000" expanded="true" signature="2895:2911" ph="..." />
                 <marker date="1505897041000" expanded="true" signature="2923:2942" ph="..." />
@@ -76,7 +73,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="296" />
+    <option name="x" value="172" />
     <option name="y" value="23" />
     <option name="width" value="2560" />
     <option name="height" value="1334" />
@@ -149,7 +146,7 @@
       <updated>1505787210274</updated>
       <workItem from="1505787211546" duration="1158000" />
       <workItem from="1505793854604" duration="3187000" />
-      <workItem from="1505869750882" duration="11136000" />
+      <workItem from="1505869750882" duration="11846000" />
     </task>
     <task id="LOCAL-00001" summary="添加index,更新地图api">
       <created>1505787500344</created>
@@ -169,10 +166,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15481000" />
+    <option name="totallyTimeSpent" value="16191000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="296" y="23" width="2560" height="1334" extended-state="0" />
+    <frame x="172" y="23" width="2560" height="1334" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24970461" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -268,8 +265,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bdmap/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="778">
-          <caret line="90" column="40" lean-forward="true" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
+        <state relative-caret-position="403">
+          <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
           <folding>
             <marker date="1505897041000" expanded="true" signature="2895:2911" ph="..." />
             <marker date="1505897041000" expanded="true" signature="2923:2942" ph="..." />
