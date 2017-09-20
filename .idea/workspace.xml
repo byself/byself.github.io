@@ -20,11 +20,11 @@
       <file leaf-file-name="map.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bdmap/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="642">
-              <caret line="110" column="29" lean-forward="true" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
+            <state relative-caret-position="520">
+              <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
               <folding>
-                <marker date="1505896073000" expanded="true" signature="2798:2814" ph="..." />
-                <marker date="1505896073000" expanded="true" signature="2826:2845" ph="..." />
+                <marker date="1505896224000" expanded="true" signature="2932:2948" ph="..." />
+                <marker date="1505896224000" expanded="true" signature="2960:2979" ph="..." />
               </folding>
             </state>
           </provider>
@@ -143,7 +143,7 @@
       <updated>1505787210274</updated>
       <workItem from="1505787211546" duration="1158000" />
       <workItem from="1505793854604" duration="3187000" />
-      <workItem from="1505869750882" duration="10243000" />
+      <workItem from="1505869750882" duration="10409000" />
     </task>
     <task id="LOCAL-00001" summary="添加index,更新地图api">
       <created>1505787500344</created>
@@ -163,7 +163,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14588000" />
+    <option name="totallyTimeSpent" value="14754000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="296" y="23" width="2560" height="1334" extended-state="0" />
@@ -211,8 +211,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1505896073000" expanded="true" signature="2798:2814" ph="..." />
-            <marker date="1505896073000" expanded="true" signature="2826:2845" ph="..." />
+            <marker date="1505896224000" expanded="true" signature="2932:2948" ph="..." />
+            <marker date="1505896224000" expanded="true" signature="2960:2979" ph="..." />
           </folding>
         </state>
       </provider>
@@ -230,8 +230,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1505896073000" expanded="true" signature="2798:2814" ph="..." />
-            <marker date="1505896073000" expanded="true" signature="2826:2845" ph="..." />
+            <marker date="1505896224000" expanded="true" signature="2932:2948" ph="..." />
+            <marker date="1505896224000" expanded="true" signature="2960:2979" ph="..." />
           </folding>
         </state>
       </provider>
@@ -254,11 +254,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bdmap/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="110" column="29" lean-forward="true" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
+        <state relative-caret-position="520">
+          <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
           <folding>
-            <marker date="1505896073000" expanded="true" signature="2798:2814" ph="..." />
-            <marker date="1505896073000" expanded="true" signature="2826:2845" ph="..." />
+            <marker date="1505896224000" expanded="true" signature="2932:2948" ph="..." />
+            <marker date="1505896224000" expanded="true" signature="2960:2979" ph="..." />
           </folding>
         </state>
       </provider>
