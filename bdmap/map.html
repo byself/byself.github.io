@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>百度地图</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=LK2zGaZKRMGP4ScziXjxFWpOm5GMWXOe&s=1；"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=LK2zGaZKRMGP4ScziXjxFWpOm5GMWXOe"></script>
     <style>
         body{
             margin: 0;
@@ -23,7 +23,7 @@
         }
 
         .bdMapBox .mapView{
-            padding-right: 300px;
+            padding-right: 165px;
             height: 100%;
         }
 
@@ -36,16 +36,32 @@
             position: absolute;
             top: 0;
             right: 0;
-            width: 300px;
+            width: 145px;
             background-color: #FFF;
         }
 
         .bdMapBox .city{
-            margin-bottom: 8px;
-            height: 24px;
-            line-height: 24px;
+            margin-bottom: 6px;
+            padding: 0 15px;
+            height: 30px;
+            line-height: 30px;
             font-size: 14px;
             color:#333;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+        }
+
+        .bdMapBox .city span{
+            margin: 0 3px;
+            font-weight:700;
+            font-size: 20px;
+            vertical-align: middle;
+        }
+
+        .bdMapBox .city.on{
+            background-color: #999;
+            border-color:#999;
+            color:#FFF;
         }
     </style>
 </head>
@@ -57,50 +73,115 @@
         <div class="mapView">
             <div class="bdmap" id="allmap"></div>
         </div>
-        <div class="cityBox">
-            <div class="city">中国上海总部</div>
-            <div class="city">中国上海总部</div>
-            <div class="city">中国上海总部</div>
-            <div class="city">中国上海总部</div>
-            <div class="city">中国上海总部</div>
-            <div class="city">中国上海总部</div>
-            <div class="city">中国上海总部</div>
-            <div class="city">中国上海总部</div>
+        <div class="cityBox" id="cityBox">
+            <div class="city on">澳洲墨尔本总　部</div>
+            <div class="city">中国<span>·</span>上海总　部</div>
+            <div class="city">中国<span>·</span>成都分公司</div>
+            <div class="city">中国<span>·</span>青岛分公司</div>
+            <div class="city">中国<span>·</span>厦门分公司</div>
+            <div class="city">中国<span>·</span>福州分公司</div>
+            <div class="city">中国<span>·</span>重庆分公司</div>
+            <div class="city">中国<span>·</span>南京分公司</div>
         </div>
     </div>
 
 </div>
 
-<input type="button" value="北京" onclick="theLocation(116.404, 39.915, '北京')" />
-<input type="button" value="上海" onclick="theLocation(121.475652, 31.233212, '上海')" />
-<input type="button" value="漯河" onclick="theLocation(114.03032, 33.577846, '漯河')" />
-<input type="button" value="杭州" onclick="theLocation(120.199989, 30.256827, '杭州')" />
-
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript">
 
-//    // 百度地图API功能
-//    var sContent ="天安门坐落在中国北京市中心,故宫的南侧,与天安门广场隔长安街相望,是清朝皇城的大门...";
+    (function($){
         var map = new BMap.Map("allmap");
-        var point = new BMap.Point(116.404, 39.915);
-        map.centerAndZoom(point, 15);
-//    var infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象
-//    map.openInfoWindow(infoWindow,point); //开启信息窗口
 
-    function theLocation(longitude, latitude, address){
-        map.clearOverlays();
-        var new_point = new BMap.Point(longitude, latitude);
-        var marker = new BMap.Marker(new_point);  // 创建标注
-        map.addOverlay(marker);              // 将标注添加到地图中
-        map.panTo(new_point);
+        function theLocation(opts){
+            map.clearOverlays();
+            var point = new BMap.Point(opts.longitude, opts.latitude);
+            map.centerAndZoom(point, 15);
 
-        var infoWindow = new BMap.InfoWindow(address, {
-            offset: {
-                width: 0,
-                height: -24
+            var marker = new BMap.Marker(point);  // 创建标注
+
+            map.addOverlay(marker);              // 将标注添加到地图中
+            map.panTo(point);
+
+            var content = "<div style='font-size: 14px;'><p style='white-space: nowrap'>地址：" + opts.address + "</p><p>电话：" + opts.tel + "</p></div>"
+
+            var infoWindow = new BMap.InfoWindow(content, {
+                title:opts.title,
+                offset: {
+                    width: 0,
+                    height: -24
+                }
+            });
+            map.openInfoWindow(infoWindow, point); //开启信息窗口
+
+        }
+
+
+        var pos = [
+            {
+                "title": "澳洲墨尔本总部",
+                "longitude": 144.957522,
+                "latitude": -37.817622,
+                "address": "Level 42, Rialto Towers, 525 Collins St, Melbourne VIC",
+                "tel": "4000006560"
+            },{
+                "title": "上海总部",
+                "longitude": 121.504402,
+                "latitude": 31.232833,
+                "address": "上海市黄浦区中山东二路558号外滩金融中心N1幢11楼",
+                "tel": "021-63666655"
+            },{
+                "title": "成都分公司",
+                "longitude": 104.087944,
+                "latitude": 30.66084,
+                "address": "成都市锦江区IFS国际金融中心3号办公楼3905-3906室",
+                "tel": "028-63176685"
+            },{
+                "title": "青岛分公司",
+                "longitude": 120.385817,
+                "latitude": 36.072169,
+                "address": "山东省青岛市市南区山东路6号甲华润大厦B座32层",
+                "tel": "0532-83767666"
+            },{
+                "title": "厦门分公司",
+                "longitude": 118.094637,
+                "latitude": 24.442399,
+                "address": "福建省厦门市世贸海峡大厦(双子塔)B塔18层1808室",
+                "tel": "0592-2059237"
+            },{
+                "title": "福州分公司",
+                "longitude": 119.34757,
+                "latitude": 26.059308,
+                "address": "福州市台江区曙光路118号【宇洋中央金座】写字楼第31层03室",
+                "tel": "0591-87595905"
+            },{
+                "title": "重庆分公司",
+                "longitude": 106.584204,
+                "latitude": 29.564876,
+                "address": "重庆市渝中区民族路188号环球金融中心WFC51层",
+                "tel": "023-60332118"
+            },{
+                "title": "南京分公司",
+                "longitude": 121.475652,
+                "latitude": 31.233212,
+                "address": "上海浦东新区陆家嘴软件园8号楼",
+                "tel": "023-60332118"
             }
+        ];
+
+        theLocation(pos[0]);
+
+
+        $("#cityBox").on("click", ".city", function(){
+            var $this = $(this);
+            var index = $this.index();
+            $this.addClass("on").siblings().removeClass("on");
+
+            theLocation(pos[index])
+
         });
-        map.openInfoWindow(infoWindow,new_point); //开启信息窗口
-    }
+
+    })(jQuery)
 
 </script>
 
