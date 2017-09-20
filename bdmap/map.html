@@ -51,7 +51,11 @@
         map.addOverlay(marker);              // 将标注添加到地图中
         map.panTo(new_point);
 
-        var infoWindow = new BMap.InfoWindow(address);
+        var infoWindow = new BMap.InfoWindow(address, {
+            offset: {
+                height: 10
+            }
+        });
         map.openInfoWindow(infoWindow,new_point); //开启信息窗口
     }
 
