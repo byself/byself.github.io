@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>导航带下拉</title>
+	<style>
+	/***********************************************
+	 * 模块 导航-module-nav-02
+	 ***********************************************/
+	.module-nav-02 ul{margin:0;padding:0;height:29px;list-style:none;border-bottom:1px solid #DDD;}
+	.module-nav-02 li{position:relative;float:left;font-family: \5FAE\8F6F\96C5\9ED1;}
+	.module-nav-02 li a{display:block;padding:5px 20px;font-size:14px;text-decoration:none;color:#333;}
+	.module-nav-02 li.on a,.module-nav-02 li.hover a{background-color:#0066cc;color:#FFF;}
+
+	.module-nav-02 .dropdown{position:absolute;left:0;top:29px;}
+	.module-nav-02 .dropdown ul{height: auto;border-bottom:0;}
+	</style>
+</head>
+<body>
+	<div class="module-nav-02 js-module-nav-02">
+		<ul>
+			<li class="on"><a href="">首页</a></li>
+			<li>
+				<a href="">公司介绍</a>
+				<div class="dropdown">
+					<ul>
+						<li><a href="">公司理念</a></li>
+						<li><a href="">发展历程</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="">产品介绍</a>
+				<div class="dropdown">
+					<ul>
+						<li><a href="">产品1</a></li>
+						<li><a href="">产品2</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="">客户案例</a></li>
+			<li><a href="">联系我们</a></li>
+		</ul>
+	</div>
+
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".js-module-nav-02")
+	});
+</script>
+
+</body>
+</html>

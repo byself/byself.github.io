@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>咨询框</title>
+<style type="text/css">
+body{font-size:12px;color:#666;background-color:#f6f6f6;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {padding: 0;margin: 0;}
+table {border-collapse: collapse; border-spacing: 0;}
+fieldset,img {border: 0;}
+address,caption,cite,code,dfn,em,strong,th,var {font-weight: normal;font-style: normal;}
+ol,ul {list-style: none;}
+caption,th {text-align: left;}
+h1,h2,h3,h4,h5,h6 {font-weight: normal;font-size: 100%;}
+q:before,q:after {content:"";}
+abbr,acronym { border: 0;}
+a{color:#333;text-decoration:none;}
+a:hover{color:#D5182A;text-decoration:underline;}
+
+.BT_ZX{position:fixed;top:26%;right:10px;width:130px;z-index: 99;}
+.BT_ZX_Thumb{position: absolute;right: 0;margin:75px 0 0 50px;width:32px;cursor:pointer;background-color:#e53834;border-radius:2px;}
+.BT_ZX_Thumb a{display:block;margin:8px auto;width:46%;height:100%;font-size:14px;color:#FFF;line-height:20px;}
+.BT_ZX_Thumb a:hover{text-decoration:none;}
+.BT_ZX_Box{position: relative;width:130px;background-color:#f5f3f4;font-family:\5FAE\8F6F\96C5\9ED1;}
+.BT_ZX_Box h2{height:30px;line-height:30px;border-bottom:6px solid #e53834;text-align:center;font-size:12px;color:#FFF;font-family:arial;background-color:#666;}
+.BT_ZX_Content{padding-bottom: 10px;width:128px;border-left:1px solid #d8d7d7;border-right:1px solid #d8d7d7;border-bottom:1px solid #d8d7d7;background-color:#faf9f9;}
+.BT_ZX_Box dl{padding:10px 12px;margin-left:auto;margin-right:auto;width:94px;border-top:1px dotted #c3c3c4;color:#333;font-weight:700;}
+.BT_ZX_Box dl:first-child{border-top:0;}
+.BT_ZX_Box dt{height:24px;line-height:24px;font-size:14px;}
+.BT_ZX_Box dt img{float:left;margin-right:5px;}
+.BT_ZX_Box dd{margin-top:5px;line-height:18px;text-align: center;font-family:arial;font-size:12px;}
+.BT_ZX_Box a:hover{text-decoration:none;}
+.BT_ZX_Close{position:absolute;right:-6px;top:-6px;width:13px;height:13px;}
+</style>
+</head>
+
+<body>
+
+<div class="BT_ZX">		
+	<div class="BT_ZX_Thumb" style="display: none;">
+		<a href="javascript:void(0);">在线咨询</a>
+	</div>
+	<div class="BT_ZX_Box" style="display: block;">        
+		<h2>ONLINE SERVICES</h2>
+		<div class="BT_ZX_Content">
+			<dl>
+				<dt><img src="images/zx-tel.png" />咨询电话</dt>
+				<dd>021-6212 9376<br/>021-5204 7186</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/zx-person.png" />在线客服</dt>
+				<dd><a href="http://wpa.qq.com/msgrd?v=3&uin=170185925&site=qq&menu=yes" target="_blank"><img src="images/zx-qq.png" width="82" height="20" alt="QQ咨询" /></a></dd>
+			</dl>
+			<dl>
+				<dt><img src="images/zx-time.png" />服务时间</dt>
+				<dd>9:00 - 24:00</dd>
+			</dl>			
+		</div>
+		<a href="javascript:void(0);" class="BT_ZX_Close"><img src="images/zx-close.png"></a>
+	</div>	
+</div>
+
+<script src="http://fe.bdimg.com/jq/jquery-1.6.2.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	//悬浮框
+	$(".BT_ZX_Close").click(function(){
+		$(".BT_ZX_Box").fadeOut(function(){
+			$(".BT_ZX_Thumb").fadeIn();
+		});
+	});
+	
+	$(".BT_ZX_Thumb").click(function(){
+		$(this).fadeOut(function(){
+			$(".BT_ZX_Box").fadeIn();
+		});
+	});
+});
+</script>
+</body>
+</html>

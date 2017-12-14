@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>导航</title>
+	<style>
+	/***********************************************
+	 * 模块 导航-module-nav-01
+	 ***********************************************/
+	.module-nav-01 ul{margin:0;padding:0;;list-style:none;}
+	.module-nav-01 li{position:relative;float:left;font-family: \5FAE\8F6F\96C5\9ED1;}
+	.module-nav-01 li a{display:block;padding:5px 20px;font-size:14px;text-decoration:none;color:#333;}
+	.module-nav-01 li a:hover,.module-nav-01 li.on a{background-color:#0066cc;color:#FFF;}
+
+	/* 下拉 */
+	.module-nav-01 li.hover>a{background-color:#0066cc;color:#FFF;}
+	.module-nav-01 .dropdown{position:absolute;left:0;top:29px;display:none;width:100%;}
+	.module-nav-01 .dropdown ul{height: auto;border-bottom:0;}
+	.module-nav-01 .dropdown li{width:100%;}
+
+
+	/* 自适应 */
+	.mobilenav{position:fixed;top:10px;right:10px;display:none;}
+	.mobilenav-btn{display:block;width:32px;height:32px;background:url(images/selectmenu.png) no-repeat;}
+	.mobilenav-btn.on{background-position:0 -32px;}
+	
+	.mobilenav ul{margin:0;padding:0;;list-style:none;}
+	.mobilenav li{position:relative;width:100%;font-family: \5FAE\8F6F\96C5\9ED1;}
+	.mobilenav li a{display:block;padding:5px 20px;font-size:14px;text-decoration:none;color:#333;}
+	.mobilenav li.on>a,.mobilenav li a:hover{background-color:#0066cc;color:#FFF;}
+	.mobilenav .firstlevel{position:absolute;top:32px;right:0;display:none;width:100px;background-color:rgba(0,0,0,0.1);}
+	
+	.mobilenav .dropdown{position:absolute;right:101px;top:0;display:none;width:100px;background-color:rgba(0,0,0,0.1);}
+
+	@media(max-width:999px){ 
+		.module-nav-01{display:none;}
+		.mobilenav{display:block;}
+	}
+	</style>
+</head>
+<body>
+	<div class="module-nav-01  js-module-nav-01">
+		<ul class="firstlevel">
+			<li class="on"><a href="">首页</a></li>
+			<li>
+				<a href="">公司介绍</a>
+				<div class="dropdown">
+					<ul class="submenu">
+						<li><a href="">公司理念</a></li>
+						<li><a href="">发展历程</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="">产品介绍</a>
+				<div class="dropdown">
+					<ul class="submenu">
+						<li><a href="">产品1</a></li>
+						<li><a href="">产品2</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="">客户案例</a></li>
+			<li><a href="">联系我们</a></li>
+		</ul>		
+	</div>
+	<div class="mobilenav">
+			<a class="mobilenav-btn" href="javascript:void(0);"></a>
+			<ul class="firstlevel">
+				<li><a href="">首页</a></li>
+				<li>
+					<a href="javascript:void(0);">公司介绍</a>
+					<div class="dropdown">
+						<ul class="submenu">
+							<li><a href="">公司理念</a></li>
+							<li><a href="">发展历程</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:void(0);">产品介绍</a>
+					<div class="dropdown">
+						<ul class="submenu">
+							<li><a href="">产品1</a></li>
+							<li><a href="">产品2</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="">客户案例</a></li>
+				<li><a href="">联系我们</a></li>
+			</ul>
+		</div>
+
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".js-module-nav-01 li")
+		.mouseover(function(){
+			$(this).addClass("hover").find(".dropdown").stop().slideDown();
+		})
+		.mouseleave(function(){
+			$(this).removeClass("hover").find(".dropdown").stop().slideUp();
+		});
+
+		$(".mobilenav-btn").on("click",function(e){
+			if($(this).hasClass("on")){
+				$(this).removeClass("on").siblings(".firstlevel").hide();
+				$(".mobilenav li").removeClass("on").find(".dropdown").hide();
+
+			}else{
+				$(this).addClass("on").siblings(".firstlevel").show();
+			};
+			e.stopPropagation();		
+		});
+
+		$(".mobilenav li").on("click",function(e){
+			$(this).addClass("on").siblings().removeClass("on");
+			$(this).find(".dropdown").show();
+			$(this).siblings().find(".dropdown").hide();
+			e.stopPropagation();
+		});
+
+		$(window).click(function(e){
+			if(!$(e.target).is(".mobilenav-btn")){
+				$(".mobilenav li").removeClass("on").find(".dropdown").hide();
+				$(".mobilenav-btn").removeClass("on").siblings(".firstlevel").hide();
+			}
+		});
+	});
+</script>
+</body>
+</html>

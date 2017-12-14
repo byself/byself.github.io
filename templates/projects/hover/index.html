@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hover效果</title>
+
+    <style>
+
+        .container{
+            margin-left: auto;
+            margin-right: auto;
+            width: 1160px;
+        }
+
+        .items{
+            overflow: hidden;
+        }
+
+        .items .item{
+            float: left;
+            margin: 12px;
+            width: 360px;
+        }
+
+        .items .item a{
+            display: block;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .items .item .img{
+            position: relative;
+        }
+
+        .items .item .img::after{
+            content: "更多";
+            display:none;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -28px;
+            margin-left: -88px;
+            width: 176px;
+            height: 56px;
+            text-align: center;
+            line-height: 56px;
+            font-size: 14px;
+            background-color:#365699;
+            color:#FFF;
+        }
+
+        .items .item .img::before{
+            content: "";
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, .4);
+        }
+
+        .items .item img{
+            width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        .items .item h2,
+        .items .item h4{
+            margin: 0;
+            padding: 0 5px;
+            font-weight: 400;
+        }
+
+        .items .item h2{
+            height: 28px;
+            line-height: 28px;
+            font-size: 18px;
+        }
+
+        .items .item h4{
+            height: 22px;
+            line-height: 22px;
+            font-size: 14px;
+            color: #808080;
+        }
+
+        .items .item .price{
+            margin-top: 12px;
+            padding: 8px 5px 0;
+            height: 32px;
+            line-height: 32px;
+            border-top: 1px solid #ccc9c9;
+            color: #b2930a;
+            font-size: 20px;
+        }
+
+        .items .item .price span{
+            margin-left: 10px;
+            font-size: 14px;
+        }
+
+        .items .item .txt{
+            padding: 10px;
+        }
+
+        .items a:hover .txt{
+            background-color: #365699;
+        }
+
+        .items a:hover h2,
+        .items a:hover h4,
+        .items a:hover .price{
+            color:#FFF;
+            border-color:#FFF;
+        }
+
+        .items a:hover .img::before,
+        .items a:hover .img::after{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="items">
+        <div class="item">
+            <a href="javascript:void(0);">
+                <div class="img">
+                    <img src="http://www.jindingaus.com/wp-content/uploads/2017/11/wq.jpg" />
+                </div>
+                <div class="txt">
+                    <h2>墨尔本</h2>
+                    <h4>都市花园公寓Conservatory</h4>
+                    <div class="price">123.4万<span>澳元起</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:void(0);">
+                <div class="img">
+                    <img src="http://www.jindingaus.com/wp-content/uploads/2017/11/wq.jpg" />
+                </div>
+                <div class="txt">
+                    <h2>墨尔本</h2>
+                    <h4>都市花园公寓Conservatory</h4>
+                    <div class="price">123.4万<span>澳元起</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:void(0);">
+                <div class="img">
+                    <img src="http://www.jindingaus.com/wp-content/uploads/2017/11/wq.jpg" />
+                </div>
+                <div class="txt">
+                    <h2>墨尔本</h2>
+                    <h4>都市花园公寓Conservatory</h4>
+                    <div class="price">123.4万<span>澳元起</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:void(0);">
+                <div class="img">
+                    <img src="http://www.jindingaus.com/wp-content/uploads/2017/11/wq.jpg" />
+                </div>
+                <div class="txt">
+                    <h2>墨尔本</h2>
+                    <h4>都市花园公寓Conservatory</h4>
+                    <div class="price">123.4万<span>澳元起</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:void(0);">
+                <div class="img">
+                    <img src="http://www.jindingaus.com/wp-content/uploads/2017/11/wq.jpg" />
+                </div>
+                <div class="txt">
+                    <h2>墨尔本</h2>
+                    <h4>都市花园公寓Conservatory</h4>
+                    <div class="price">123.4万<span>澳元起</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:void(0);">
+                <div class="img">
+                    <img src="http://www.jindingaus.com/wp-content/uploads/2017/11/wq.jpg" />
+                </div>
+                <div class="txt">
+                    <h2>墨尔本</h2>
+                    <h4>都市花园公寓Conservatory</h4>
+                    <div class="price">123.4万<span>澳元起</span></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

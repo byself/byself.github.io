@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>项目</title>
+
+    <style>
+
+        html,body{
+            height: 100%;
+        }
+
+        .container{
+            display: flex;
+            padding: 20px;
+            height: 100%;
+        }
+
+        .nav{
+            width: 450px;
+        }
+
+        .nav li{
+
+        }
+
+        .content{
+            padding: 0 100px;
+            flex: 1;
+        }
+
+        .content iframe{
+            width: 100%;
+            height: 100%;
+        }
+
+        table{border-left:1px solid #999;border-top:1px solid #999;}
+        th,td{padding:8px 5px;border-right:1px solid #999;border-bottom:1px solid #999;text-align:center;}
+        th{font-size:14px;}
+        td{font-size:12px;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="nav">
+        <table cellspacing="0" cellpadding="0">
+            <thead>
+                <tr>
+                    <th width="150">模块名称</th>
+                    <th width="300">模块分类</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>页面顶部条</td>
+                    <td><a href="javascript:void(0);" data-url="projects/topbar/topbar.html" target="_blank">页面顶部条</a></td>
+                </tr>
+                <tr>
+                    <td>页面顶部</td>
+                    <td><a href="javascript:void(0);" data-url="projects/top/top.html" target="_blank">页面顶部</a></td>
+                </tr>
+                <tr>
+                    <td>导航</td>
+                    <td><a href="javascript:void(0);" data-url="projects/nav/main/nav.html" target="_blank">有自适应、下拉的导航</a></td>
+                </tr>
+                <tr>
+                    <td rowspan="6">图片轮换</td>
+                    <td><a href="javascript:void(0);" data-url="projects/slide/001/slide-ono-by-one.html" target="_blank">一屏一个</a></td>
+                </tr>
+                <tr>
+                    <td><a href="javascript:void(0);" data-url="projects/slide/002/slide-ono-by-one-all-screen.html" target="_blank">一屏一个（通屏）</a></td>
+                </tr>
+                <tr>
+                    <td>一屏多个</td>
+                </tr>
+                <tr>
+                    <td>一屏一个（自适应）</td>
+                </tr>
+                <tr>
+                    <td>一屏一个（通屏、自适应）</td>
+                </tr>
+                <tr>
+                    <td>一屏多个（自适应）</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">左导航</td>
+                    <td>不带下拉的左导航</td>
+                </tr>
+                <tr>
+                    <td>多层级下拉的左导航</td>
+                </tr>
+                <tr>
+                    <td>自适应左侧导航</td>
+                </tr>
+                <tr>
+                    <td rowspan="5">列表</td>
+                    <td><a href="javascript:void(0);" data-url="projects/list/title/title.html" target="_blank">只有标题</a></td>
+                </tr>
+                <tr>
+                    <td><a href="javascript:void(0);" data-url="projects/list/title-summary/title-summary.html" target="_blank">标题+简介</a></td>
+                </tr>
+                <tr>
+                    <td><a href="javascript:void(0);" data-url="projects/list/thumb-title-summary/thumb-title-summary.html" target="_blank">标题+简介+缩略图</a></td>
+                </tr>
+                <tr>
+                    <td><a href="javascript:void(0);" data-url="projects/list/title-summary-date/title-summary-date.html" target="_blank">标题+简介+日期</a></td>
+                </tr>
+                <tr>
+                    <td><a href="javascript:void(0);" data-url="projects/list/grid/grid-list.html" target="_blank">网格列表</a></td>
+                </tr>
+                <tr>
+                    <td>当前位置</td>
+                    <td><a href="javascript:void(0);" data-url="projects/nav/crumb/crumb-navigation.html" target="_blank">带图标</a></td>
+                </tr>
+                <tr>
+                    <td>咨询框</td>
+                    <td><a href="javascript:void(0);" data-url="projects/zx/zx.html" target="_blank">咨询框</a></td>
+                </tr>
+                <tr>
+                    <td rowspan="3">视频</td>
+                    <td><a href="javascript:void(0);" data-url="projects/video/video.html" target="_blank">视频插件</a></td>
+                </tr>
+                <tr>
+                    <td>视频插件自适应</td>
+                </tr>
+                <tr>
+                    <td>第三方视频地址（自适应）</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">地图</td>
+                    <td><a href="javascript:void(0);" data-url="projects/map/bdmap/map.html" target="_blank">百度地图</a></td>
+                </tr>
+                <tr>
+                    <td><a href="javascript:void(0);" data-url="projects/bdmap/map.html" target="_blank">百度地图</a></td>
+                </tr>
+                <tr>
+                    <td>筛选条件</td>
+                    <td><a href="javascript:void(0);" data-url="projects/filter/condition-filter.html" target="_blank">筛选条件</a></td>
+                </tr>
+                <tr>
+                    <td>分页</td>
+                    <td><a href="javascript:void(0);" data-url="projects/paging/paging.html" target="_blank">分页</a></td>
+                </tr>
+                <tr>
+                    <td>触发</td>
+                    <td><a href="javascript:void(0);" data-url="projects/hover/index.html" target="_blank">图文</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="content">
+        <iframe src="projects/bdmap/map.html" frameborder="0"></iframe>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+
+<script>
+    $(function(){
+
+        const $nav = $(".nav");
+        const $iframe = $(".content iframe");
+
+        $nav.on("click", "a", function(){
+            let url = $(this).attr("data-url");
+            $iframe.attr("src", url);
+        })
+
+    })
+</script>
+
+</body>
+</html>
